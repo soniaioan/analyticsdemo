@@ -1,0 +1,36 @@
+{
+  "name": "analyticsdemo",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test:e2e": "mocha --timeout 10000 \"test/e2e/**/*.js\"",
+    "test:unit": "mocha --timeout 10000 \"test/unit/**/*.js\"",
+    "test": "npm run test:unit && npm run test:e2e"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "clf-parser": "0.0.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "file-extension": "^4.0.2",
+    "joi": "^13.2.0",
+    "line-by-line": "^0.1.6",
+    "lodash": "^4.17.5",
+    "log": "^1.4.0",
+    "moment": "^2.22.1",
+    "morgan": "~1.9.0",
+    "multer": "^1.3.0",
+    "node-localstorage": "^1.3.1",
+    "parse-domain": "^2.0.0",
+    "serve-favicon": "~2.4.5",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "should": "8.2.2",
+    "supertest": "3.0.x",
+    "supertest-as-promised": "^4.0.2"
+  }
+}
